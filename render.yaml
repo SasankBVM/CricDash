@@ -1,0 +1,28 @@
+services:
+  # Web Service for the Cricket Dashboard
+  - type: web
+    name: cricket-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r cricket-dashboard/requirements.txt
+    startCommand: cd cricket-dashboard && python server.py
+    envVars:
+      - key: HOST_NAME
+        sync: false
+      - key: DATABASE_NAME
+        sync: false
+      - key: USER_NAME
+        sync: false
+      - key: PASSWORD
+        sync: false
+      - key: PORT
+        value: 5432
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+databases:
+  # PostgreSQL Database
+  - name: cricket-db
+    plan: free
+    databaseName: cricket_analyzer
+    user: cricket_user
