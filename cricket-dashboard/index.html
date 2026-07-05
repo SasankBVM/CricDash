@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CricMetrics Pro - Advanced Cricket Analytics Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="CricMetrics Pro home">
+          <span class="brand-mark">🏏</span>
+          <span>
+            <strong>CricMetrics Pro</strong>
+            <small>Analytics Hub</small>
+          </span>
+        </a>
+
+        <div class="top-search">
+          <label for="playerSearch">Find player</label>
+          <input id="playerSearch" type="search" autocomplete="off" placeholder="Search Tendulkar, Kohli, Malinga...">
+          <div id="suggestions" class="suggestions" hidden></div>
+        </div>
+
+        <nav class="app-tabs" id="appTabs" aria-label="Dashboard views">
+          <button type="button" class="active" data-tab="overview">Overview</button>
+          <button type="button" data-tab="compare">Compare</button>
+          <button type="button" data-tab="analytics">Advanced Analytics</button>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Professional Cricket Intelligence Platform</p>
+          <h1>Unlock Cricket Legends' Stats</h1>
+          <p>Dive deep into player analytics. Compare cricket icons, explore career trajectories, and discover insights across all formats — powered by live Postgres queries.</p>
+        </div>
+        <div class="hero-score">
+          <span id="playerCount">0</span>
+          <small>players indexed</small>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Dashboard controls">
+        <div class="control-group">
+          <span>Format</span>
+          <div class="segmented" id="formatTabs">
+            <button type="button" data-format="Test" class="active">Test</button>
+            <button type="button" data-format="ODI">ODI</button>
+            <button type="button" data-format="T20">T20</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span>Skill</span>
+          <div class="segmented" id="roleTabs">
+            <button type="button" data-role="Batting" class="active">Batting</button>
+            <button type="button" data-role="Bowling">Bowling</button>
+            <button type="button" data-role="Fielding">Fielding</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="overviewView" class="view active-view">
+        <section class="player-strip">
+          <div>
+            <p class="section-kicker">Player focus</p>
+            <h2 id="selectedPlayerName">Loading data...</h2>
+            <p id="selectedPlayerMeta"></p>
+          </div>
+          <button type="button" class="compare-cta" id="openCompare">Compare this player</button>
+        </section>
+
+        <section class="kpi-grid" id="kpiGrid" aria-label="Key player metrics"></section>
+
+        <section class="dashboard-grid">
+          <article class="panel span-7">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Format split</p>
+                <h3 id="barTitle">Runs by format</h3>
+              </div>
+            </div>
+            <div id="barChart" class="bar-chart"></div>
+          </article>
+
+          <article class="panel span-5">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Profile card</p>
+                <h3>Career snapshot</h3>
+              </div>
+            </div>
+            <div id="profileCard" class="profile-card"></div>
+          </article>
+
+          <article class="panel span-12">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Leaderboard</p>
+                <h3 id="leaderTitle">Top players</h3>
+              </div>
+              <select id="metricSelect" aria-label="Leaderboard metric"></select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead id="leaderHead"></thead>
+                <tbody id="leaderBody"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section id="compareView" class="view">
+        <section class="compare-header">
+          <div>
+            <p class="section-kicker">Player comparison</p>
+            <h2 id="compareTitle">Head to head</h2>
+            <p id="compareMeta"></p>
+          </div>
+          <div class="compare-picker">
+            <label for="comparePlayerSearch">Compare with</label>
+            <input id="comparePlayerSearch" type="search" autocomplete="off" placeholder="Search player to compare...">
+            <div id="compareSuggestions" class="suggestions" hidden></div>
+          </div>
+        </section>
+
+        <section class="compare-layout">
+          <article class="versus-card primary" id="primaryCompareCard"></article>
+          <article class="versus-card secondary" id="secondaryCompareCard"></article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel span-7">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Metric battle</p>
+                <h3>Side-by-side strength</h3>
+              </div>
+            </div>
+            <div id="compareChart" class="compare-chart"></div>
+          </article>
+
+          <article class="panel span-5">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker">Format battle</p>
+                <h3 id="compareFormatTitle">Primary metric by format</h3>
+              </div>
+            </div>
+            <div id="compareFormatChart" class="compare-chart"></div>
+          </article>
+        </section>
+      </section>
+
+      <section id="analyticsView" class="view">
+        <nav class="app-tabs sub-tabs" id="analyticsSubTabs" aria-label="Advanced analytics views">
+          <button type="button" class="active" data-subtab="rankings">Player Rankings</button>
+          <button type="button" data-subtab="country">Country Stats</button>
+        </nav>
+
+        <section id="rankingsSubview" class="subview active-subview">
+          <section class="dashboard-grid">
+            <article class="panel span-12">
+              <div class="panel-heading">
+                <div>
+                  <p class="section-kicker">PLAYER STATS</p>
+                  <h3 id="rankingsTitle">All-format batting leaders</h3>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead id="rankingsHead"></thead>
+                  <tbody id="rankingsBody"></tbody>
+                </table>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section id="countrySubview" class="subview">
+          <section class="controls" aria-label="Country stats controls">
+            <div class="control-group">
+              <span>Role</span>
+              <div class="segmented" id="countryRoleTabs">
+                <button type="button" data-role="batsmen" class="active">Batsmen</button>
+                <button type="button" data-role="bowler">Bowlers</button>
+                <button type="button" data-role="fielder">Fielders</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span>Format</span>
+              <div class="segmented" id="countryFormatTabs">
+                <button type="button" data-format="Test" class="active">Test</button>
+                <button type="button" data-format="ODI">ODI</button>
+                <button type="button" data-format="T20">T20</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span>Country</span>
+              <select id="countryFilter" aria-label="Filter by country">
+                <option value="">All countries</option>
+              </select>
+            </div>
+          </section>
+
+          <section class="dashboard-grid">
+            <div class="panel-heading span-12">
+              <div>
+                <p class="section-kicker">*_stats_country_wise</p>
+                <h3 id="countryStatsTitle">Country-wise batting statistics</h3>
+              </div>
+            </div>
+            <div id="countryStatsContainer" class="country-stats-grid"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

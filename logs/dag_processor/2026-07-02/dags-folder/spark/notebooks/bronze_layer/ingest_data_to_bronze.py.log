@@ -1,0 +1,134 @@
+{"timestamp":"2026-07-02T17:44:19.185854Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/spark/notebooks/bronze_layer/ingest_data_to_bronze.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-07-02T17:44:19.461350Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:19.885785Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:19.893172Z","level":"error","event":"26/07/02 23:14:19 WARN Utils: Your hostname, Burugulas-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 192.168.0.107 instead (on interface en0)","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:19.894368Z","level":"error","event":"26/07/02 23:14:19 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:20.021204Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:20.022173Z","level":"error","event":"Setting default log level to \"WARN\".","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:20.022208Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:20.126803Z","level":"error","event":"26/07/02 23:14:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:23.586256Z","level":"error","event":"26/07/02 23:14:23 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:23.586399Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:23.586423Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:23.586438Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:23.586452Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/ODI%20data.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.006522Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.006611Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, 4s, 6s, Unnamed: 15","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.006631Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, 4s, 6s, Unnamed: 15","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.006647Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.006661Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.158877Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.159093Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, 100, 50, 0, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.159135Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, 100, 50, 0, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.159165Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.159180Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.300420Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.300542Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.300583Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.300613Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.300642Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_ODI.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.431155Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.431238Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Overs, Mdns, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.431259Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Overs, Mdns, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.431274Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.431287Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.596194Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.596273Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, BBM, Ave, Econ, SR, 5, 10, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.596293Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, BBM, Ave, Econ, SR, 5, 10, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.596308Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.596321Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.716581Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.716652Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.716671Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.716686Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.716699Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_ODI.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.835204Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.835281Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.835301Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.835316Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.835329Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.953145Z","level":"error","event":"26/07/02 23:14:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.953227Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.953248Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.953264Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.953279Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:24.972425Z","level":"info","event":"Sample Data (ODI Batsmen):","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.033300Z","level":"error","event":"26/07/02 23:14:25 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:25.033389Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:25.033412Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:25.033430Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:25.033444Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/ODI%20data.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:25.041911Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.041958Z","level":"info","event":"|_c0|              Player|     Span|Mat|Inns| NO| Runs|  HS|  Ave|   BF|   SR|100| 50|  0|Unnamed: 13|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.041974Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.041990Z","level":"info","event":"|  0|SR Tendulkar (INDIA)|1989-2012|463| 452| 41|18426|200*|44.83|21367|86.23| 49| 96| 20|       NULL|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.042064Z","level":"info","event":"|  1|KC Sangakkara (As...|2000-2015|404| 380| 41|14234| 169|41.98|18048|78.86| 25| 93| 15|       NULL|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.042093Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:25.042109Z","level":"info","event":"only showing top 2 rows","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:44:56.493710Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/spark/notebooks/bronze_layer/ingest_data_to_bronze.py","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-07-02T17:44:56.666191Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.005215Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.011923Z","level":"error","event":"26/07/02 23:14:57 WARN Utils: Your hostname, Burugulas-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 192.168.0.107 instead (on interface en0)","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.012985Z","level":"error","event":"26/07/02 23:14:57 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.120284Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.121253Z","level":"error","event":"Setting default log level to \"WARN\".","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.121286Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:57.224489Z","level":"error","event":"26/07/02 23:14:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:59.727411Z","level":"error","event":"26/07/02 23:14:59 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:59.727493Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:59.727513Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:59.727528Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:44:59.727541Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/ODI%20data.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.122640Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.122722Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, 4s, 6s, Unnamed: 15","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.122743Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, 4s, 6s, Unnamed: 15","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.122758Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.122772Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.258891Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.258998Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, 100, 50, 0, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.259027Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, 100, 50, 0, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.259043Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.259057Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.386063Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.386191Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.386225Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.386254Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.386281Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_ODI.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.506819Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.506916Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Overs, Mdns, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.506939Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Overs, Mdns, Runs, Wkts, BBI, Ave, Econ, SR, 4, 5, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.506954Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.506967Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.630280Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.630413Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, BBM, Ave, Econ, SR, 5, 10, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.630444Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Balls, Runs, Wkts, BBI, BBM, Ave, Econ, SR, 5, 10, Unnamed: 14","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.630461Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.630477Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Bowling/Bowling_test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.749397Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.749503Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.749536Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.749564Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.749592Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_ODI.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.856204Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.856279Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.856298Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.856315Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.856329Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_t20.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.950520Z","level":"error","event":"26/07/02 23:15:00 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.950598Z","level":"error","event":" Header: , Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.950617Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, Dis, Ct, St, Ct Wk, Ct Fi, MD, D/I, Unnamed: 11","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.950632Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.950646Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Fielding/Fielding_test.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:00.967409Z","level":"info","event":"Sample Data (ODI Batsmen):","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.012090Z","level":"error","event":"26/07/02 23:15:01 WARN CSVHeaderChecker: CSV header does not conform to the schema.","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:01.012171Z","level":"error","event":" Header: , Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:01.012190Z","level":"error","event":" Schema: _c0, Player, Span, Mat, Inns, NO, Runs, HS, Ave, BF, SR, 100, 50, 0, Unnamed: 13","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:01.012205Z","level":"error","event":"Expected: _c0 but found:","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:01.012219Z","level":"error","event":"CSV file: file:///Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data/Batting/ODI%20data.csv","logger":"dag_processor.stderr"}
+{"timestamp":"2026-07-02T17:45:01.020694Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020759Z","level":"info","event":"|_c0|              Player|     Span|Mat|Inns| NO| Runs|  HS|  Ave|   BF|   SR|100| 50|  0|Unnamed: 13|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020784Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020798Z","level":"info","event":"|  0|SR Tendulkar (INDIA)|1989-2012|463| 452| 41|18426|200*|44.83|21367|86.23| 49| 96| 20|       NULL|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020811Z","level":"info","event":"|  1|KC Sangakkara (As...|2000-2015|404| 380| 41|14234| 169|41.98|18048|78.86| 25| 93| 15|       NULL|","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020823Z","level":"info","event":"+---+--------------------+---------+---+----+---+-----+----+-----+-----+-----+---+---+---+-----------+","logger":"dag_processor.stdout"}
+{"timestamp":"2026-07-02T17:45:01.020841Z","level":"info","event":"only showing top 2 rows","logger":"dag_processor.stdout"}

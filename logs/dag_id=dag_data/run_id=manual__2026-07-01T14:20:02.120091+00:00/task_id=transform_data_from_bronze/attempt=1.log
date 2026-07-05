@@ -1,0 +1,79 @@
+{"timestamp":"2026-07-01T14:20:25.189499Z","level":"info","event":"2026-07-01T14:20:25.189306Z [info     ] ::group::Pre Execute           [task] loc=task_runner.py:1926","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:25.362497Z","level":"info","event":"setup plugin alembic.autogenerate.schemas","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.362607Z","level":"info","event":"setup plugin alembic.autogenerate.tables","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.362662Z","level":"info","event":"setup plugin alembic.autogenerate.types","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.362703Z","level":"info","event":"setup plugin alembic.autogenerate.constraints","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.362737Z","level":"info","event":"setup plugin alembic.autogenerate.defaults","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.362769Z","level":"info","event":"setup plugin alembic.autogenerate.comments","logger":"alembic.runtime.plugins","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","filename":"plugins.py","lineno":37}
+{"timestamp":"2026-07-01T14:20:25.450173Z","level":"info","event":"DAG bundles loaded: dags-folder","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-07-01T14:20:25.450503Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/etl_scheduler.py","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-07-01T14:20:25.534865Z","level":"warning","event":"The `airflow.decorators.task` attribute is deprecated. Please use `'airflow.sdk.task'`.","category":"UserWarning","filename":"/Users/burugula.sasank/airflow/dags/etl_scheduler.py","lineno":1,"task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"py.warnings"}
+{"timestamp":"2026-07-01T14:20:25.534947Z","level":"warning","event":"The `airflow.decorators.dag` attribute is deprecated. Please use `'airflow.sdk.dag'`.","category":"UserWarning","filename":"/Users/burugula.sasank/airflow/dags/etl_scheduler.py","lineno":1,"task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"py.warnings"}
+{"timestamp":"2026-07-01T14:20:25.534987Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"UserWarning","filename":"/Users/burugula.sasank/airflow/dags/etl_scheduler.py","lineno":2,"task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"py.warnings"}
+{"timestamp":"2026-07-01T14:20:25.556324Z","level":"info","event":"::endgroup::","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-07-01T14:20:25.673602Z","level":"error","event":"/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/pyspark/sql/udf.py:134: UserWarning: Cannot infer the eval type from type hints.","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:25.673737Z","level":"error","event":"  warnings.warn(\"Cannot infer the eval type from type hints. \", UserWarning)","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:25.861914Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.387812Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.399732Z","level":"error","event":"26/07/01 19:50:26 WARN Utils: Your hostname, Burugulas-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 192.168.0.106 instead (on interface en0)","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.401899Z","level":"error","event":"26/07/01 19:50:26 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.594455Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.594666Z","level":"error","event":"Setting default log level to \"WARN\".","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.594720Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:26.810297Z","level":"error","event":"26/07/01 19:50:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","logger":"task.stderr"}
+{"timestamp":"2026-07-01T14:20:34.597750Z","level":"info","event":"root","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.597928Z","level":"info","event":" |-- _c0: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.597997Z","level":"info","event":" |-- Player: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598054Z","level":"info","event":" |-- Span: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598108Z","level":"info","event":" |-- Mat: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598162Z","level":"info","event":" |-- Inns: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598216Z","level":"info","event":" |-- NO: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598269Z","level":"info","event":" |-- Runs: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598323Z","level":"info","event":" |-- HS: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598380Z","level":"info","event":" |-- Ave: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598431Z","level":"info","event":" |-- BF: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598492Z","level":"info","event":" |-- SR: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598543Z","level":"info","event":" |-- 100: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598596Z","level":"info","event":" |-- 50: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598647Z","level":"info","event":" |-- 0: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598769Z","level":"info","event":" |-- Unnamed: 13: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598849Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.598937Z","level":"info","event":"root","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599031Z","level":"info","event":" |-- _c0: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599091Z","level":"info","event":" |-- Player: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599250Z","level":"info","event":" |-- Span: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599315Z","level":"info","event":" |-- Mat: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599360Z","level":"info","event":" |-- Inns: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599400Z","level":"info","event":" |-- NO: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599437Z","level":"info","event":" |-- Runs: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599473Z","level":"info","event":" |-- HS: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599510Z","level":"info","event":" |-- Ave: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599544Z","level":"info","event":" |-- BF: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599576Z","level":"info","event":" |-- SR: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599610Z","level":"info","event":" |-- 100: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599644Z","level":"info","event":" |-- 50: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599678Z","level":"info","event":" |-- 0: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599711Z","level":"info","event":" |-- 4s: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599744Z","level":"info","event":" |-- 6s: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599777Z","level":"info","event":" |-- Unnamed: 15: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599811Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599849Z","level":"info","event":"root","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599882Z","level":"info","event":" |-- _c0: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599916Z","level":"info","event":" |-- Player: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599948Z","level":"info","event":" |-- Span: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.599981Z","level":"info","event":" |-- Mat: integer (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600015Z","level":"info","event":" |-- Inns: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600049Z","level":"info","event":" |-- NO: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600081Z","level":"info","event":" |-- Runs: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600123Z","level":"info","event":" |-- HS: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600156Z","level":"info","event":" |-- Ave: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600188Z","level":"info","event":" |-- 100: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600222Z","level":"info","event":" |-- 50: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600253Z","level":"info","event":" |-- 0: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600286Z","level":"info","event":" |-- Unnamed: 11: string (nullable = true)","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.600320Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.632057Z","level":"info","event":"Silver Ingestion Success","logger":"task.stdout"}
+{"timestamp":"2026-07-01T14:20:34.632260Z","level":"info","event":"Done. Returned value was: None","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-07-01T14:20:34.632566Z","level":"info","event":"::group::Post Execute","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-07-01T14:20:34.642994Z","level":"info","event":"::endgroup::","task_id":"transform_data_from_bronze","map_index":-1,"dag_id":"dag_data","try_number":1,"ti_id":"019f1e0d-16d5-754f-a017-ebcc52d79b15","run_id":"manual__2026-07-01T14:20:02.120091+00:00","logger":"task","filename":"task_runner.py","lineno":1896}
+{"timestamp":"2026-07-01T14:20:35.064809Z","level":"error","event":"\r[Stage 9:>                                                          (0 + 1) / 1]","logger":"task.stderr"}

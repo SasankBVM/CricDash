@@ -1,0 +1,3 @@
+{"timestamp":"2026-07-02T17:44:19.194714Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data.zip","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-07-02T17:44:49.360431Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data.zip","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-07-02T17:45:19.824333Z","level":"info","event":"Filling up the DagBag from /Users/burugula.sasank/airflow/dags/file_stores/api_dump/cric_data.zip","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
