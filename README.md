@@ -29,14 +29,14 @@
 ## 🏗️ Architecture
 
 ```
-Cricbuzz API → Airflow DAG → Spark Processing → PostgreSQL → Web Dashboard
+Kaggle API → Airflow DAG → Spark Processing → PostgreSQL → Web Dashboard
                     ↓              ↓                ↓
                 Bronze Layer   Silver Layer    Gold Layer
                 (Raw Data)     (Cleaned)       (Aggregated)
 ```
 
 ### Data Flow
-1. **Extract**: Fetch cricket data from Cricbuzz API
+1. **Extract**: Fetch cricket data from Kaggle API
 2. **Bronze**: Store raw data in Parquet format
 3. **Silver**: Clean, validate, and transform using Spark
 4. **Gold**: Create materialized views for fast queries
@@ -89,7 +89,7 @@ extract_api → parse_json → bronze_layer → silver_layer → gold_layer
 ### Medallion Architecture
 
 #### 🥉 Bronze Layer
-- **Input**: JSON from Cricbuzz API
+- **Input**: JSON from Kaggle API
 - **Process**: Minimal transformation, schema validation
 - **Output**: Parquet files (partitioned by format)
 - **Storage**: `file_stores/bronze_layer/`
@@ -179,6 +179,10 @@ FROM batsmen_stats GROUP BY full_name;
 -- Indexes for common queries
 CREATE INDEX idx_runs ON batsmen_odi(runs DESC);
 ```
+
+---
+
+> **📌 Data Note:** This project is built on existing historical cricket data sourced from Kaggle datasets. Statistics for senior, well-established players are generally accurate and complete. However, numbers for junior or lesser-known players may be incomplete or contain inaccuracies due to gaps in the source data. This project is intended for learning and portfolio demonstration purposes, not as an authoritative statistical reference.
 
 ---
 
